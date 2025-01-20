@@ -11,13 +11,14 @@
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
+git clone https://github.com/dArK-sEiD05/Email-scheduling.git
 ```
 
 **2. Create MySQL database**
 
 ```bash
-create database quartz_demo
+CREATE database quartz_demo;
+USE database quartz_demo;
 ```
 
 **3. Change MySQL username and password as per your MySQL installation**
@@ -32,8 +33,8 @@ The project is using Gmail's SMTP server for sending emails. Whether you use Gma
 ```properties
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=rajeevc217@gmail.com
-spring.mail.password=
+spring.mail.username=Yourmail@gmail.com
+spring.mail.password=your mail app password
 ```
 
 If you're using Gmail, you need to allow the third party apps to send emails by following the instructions below -
@@ -59,11 +60,11 @@ mvn spring-boot:run
 
 ## Scheduling an Email using the /scheduleEmail API
 
-ADD A example mail to whom you want to send
+Add a example mail to whom you want to send
 
 ```bash
 curl -i -H "Content-Type: application/json" -X POST \
--d '{"email":"example@gmail.com","subject":"Things I wanna say to my Future self","body":"Dear Future me, <br><br> <b>Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small.</b> <br><br> Cheers, <br>Rajeev!","dateTime":"2018-09-04T16:15:00","timeZone":"Asia/Kolkata"}' \
+-d '{"email":"example@gmail.com","subject":"Things I wanna say to my Future self","body":"Dear Future me, <br><br> <b>Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small.</b> <br><br> Cheers, <br>Rajeev!","dateTime":"2027-09-04T16:15:00","timeZone":"Asia/Kolkata"}' \
 http://localhost:8080/scheduleEmail
 
 # Output
