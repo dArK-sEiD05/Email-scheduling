@@ -70,3 +70,8 @@ http://localhost:8080/scheduleEmail
 # Output
 {"success":true,"jobId":"0741eafc-0627-446f-9eaf-26f5d6b29ec2","jobGroup":"email-jobs","message":"Email Scheduled Successfully!"}
 ```
+
+## OUTPUT 
+
+![Postman](img/img1.jpg)
+![Emailoutput](img/img2.jpg)
