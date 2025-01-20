@@ -64,7 +64,7 @@ Add a example mail to whom you want to send
 
 ```bash
 curl -i -H "Content-Type: application/json" -X POST \
--d '{"email":"example@gmail.com","subject":"Things I wanna say to my Future self","body":"Dear Future me, <br><br> <b>Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small.</b> <br><br> Cheers, <br>Rajeev!","dateTime":"2027-09-04T16:15:00","timeZone":"Asia/Kolkata"}' \
+-d '{"email":"example@gmail.com","subject":"Testing Schedule,"body":"Dear  me, <br><br> <b>If you are reading this, its working.</b> <br><br> Cheers, <br>Rajeev!","dateTime":"2027-09-04T16:15:00","timeZone":"Asia/Kolkata"}' \
 http://localhost:8080/scheduleEmail
 
 # Output
