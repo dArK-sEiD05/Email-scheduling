@@ -18,7 +18,7 @@ git clone https://github.com/dArK-sEiD05/Email-scheduling.git
 
 ```bash
 CREATE database quartz_demo;
-USE database quartz_demo;
+USE  quartz_demo;
 ```
 
 **3. Change MySQL username and password as per your MySQL installation**
